@@ -22,15 +22,6 @@ chsh -s $(which zsh)
 ./.dotfiles/install.sh
 ```
 
-### Themes
-
-#### [Starship](https://starship.rs/)
-
-Install starship if you don't have it.
-
-```bash
-curl -sS https://starship.rs/install.sh | sh
-```
 
 ### Plugins
 
@@ -50,4 +41,3 @@ sudo usermod -aG sudo [name]
 su - [name]
 vi ~/.ssh/authorized_keys
 ```
-
