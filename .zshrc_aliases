@@ -8,3 +8,6 @@ alias dp='docker ps -a --format "table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Port
 
 # General
 alias ll="ls -al"
+
+# kubectl
+alias k='/usr/local/bin/kubectl'
