@@ -13,3 +13,6 @@
 [submodule ".tmux"]
 	path = .tmux
 	url = https://github.com/gpakosz/.tmux.git
+[submodule "themes/powerlevel10k"]
+	path = themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k
