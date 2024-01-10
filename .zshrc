@@ -20,7 +20,9 @@ source ~/.dotfiles/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.dotfiles/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.dotfiles/themes/powerlevel10k/powerlevel10k.zsh-theme
 
-alias ll="ls -al"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Alias
+alias ll="ls -al"
+alias k=/usr/local/bin/kubectl
