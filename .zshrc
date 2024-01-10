@@ -12,7 +12,7 @@ export ZSH="$HOME/.dotfiles/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump kubectl helm aws istioctl nvm)
+# plugins=(git autojump kubectl helm aws istioctl nvm)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/.zshrc_aliases
@@ -24,7 +24,15 @@ source ~/.dotfiles/themes/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-if command -v kubectl &> /dev/null; then
-    alias k=/usr/local/bin/kubectl &&\
+if [ -x /usr/local/bin/kubectl ]; then
+    alias k='/usr/local/bin/kubectl'
     source =(kubectl completion zsh)
+else
+    # Check if /usr/bin/kubectl exists as a fallback
+    if [ -x /usr/bin/kubectl ]; then
+        alias k='/usr/bin/kubectl'
+        source =(kubectl completion zsh)
+    else
+        echo "kubectl not found Skipping..."
+    fi
 fi
