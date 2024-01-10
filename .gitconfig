@@ -4,7 +4,7 @@
 
 [alias]
   co = checkout
-  st = status
+  s = status
 
 [url "https://x-access-token:token@github.com"]
   insteadOf = https://github.com
