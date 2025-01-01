@@ -1,9 +1,9 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
-	url = https://github.com/ohmyzsh/ohmyzsh.git
-[submodule "plugins/autojump"]
-	path = plugins/autojump
-	url = https://github.com/wting/autojump.git
+	url = https://github.com/ohmyzsh/ohmyzsh
+# [submodule "plugins/autojump"]
+# 	path = plugins/autojump
+# 	url = https://github.com/wting/autojump.git
 [submodule "plugins/zsh-autosuggestions"]
 	path = plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
@@ -15,4 +15,9 @@
 	url = https://github.com/gpakosz/.tmux.git
 [submodule "themes/powerlevel10k"]
 	path = themes/powerlevel10k
-	url = https://github.com/romkatv/powerlevel10k.git
+	url = https://github.com/romkatv/powerlevel10k
+	shallow = true
+	fetchRecurseSubmodules = false
+[submodule "plugins/autojump"]
+	path = plugins/autojump
+	url = https://github.com/wting/autojump

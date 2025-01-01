@@ -17,11 +17,20 @@ sudo apt-get install zsh
 chsh -s $(which zsh)
 ```
 
-
 ```bash
 ./.dotfiles/install.sh
 ```
 
+## Run via Docker
+
+```bash
+  sudo docker run -e TERM -e COLORTERM -e LC_ALL=C.UTF-8 -it --rm alpine sh -uec '
+  apk add git zsh nano vim python3 &&
+  cd ~ &&
+  git clone https://github.com/KY00KIM/.dotfiles --recursive --shallow-submodules &&
+  ./.dotfiles/install.sh &&
+  exec zsh'
+```
 
 ### Plugins
 
