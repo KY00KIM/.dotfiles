@@ -4,3 +4,6 @@ set paste
 set tabstop=4
 set list
 set expandtab
+
+let NERDTreeShowHidden=1
+

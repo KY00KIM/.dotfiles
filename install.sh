@@ -16,6 +16,16 @@ cd ~/.dotfiles/plugins/autojump &&\
 ./install.py &&\
 cd -
 
+# Nvim
+~/.dotfiles/nvim/install.sh &&\
+mkdir -p ~/.config/nvim &&\
+ln -sf ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+
+# Nvim plugin
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+
 echo 'Success.\n'
 echo 'Customize the files below.'
 echo '\t~/.zshenv'
