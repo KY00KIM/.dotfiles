@@ -25,6 +25,8 @@ ln -sf ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+# xclip : clipboard-terminal
+~/.dotfiles/xclip.sh
 
 echo 'Success.\n'
 echo 'Customize the files below.'

@@ -47,7 +47,8 @@ set showmode         " Show mode (e.g., -- INSERT --)
 set signcolumn=yes   " Always show the sign column (for diagnostics, Git, etc.)
 
 " Clipboard
-set clipboard=unnamedplus " Use system clipboard for copy/paste
+"set clipboard=unnamedplus " Use system clipboard for copy/paste
+set clipboard+=unnamedplus " Use system clipboard for copy/paste
 
 " Split behavior
 set splitright       " Open vertical splits to the right of the current window
