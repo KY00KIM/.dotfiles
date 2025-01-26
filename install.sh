@@ -1,32 +1,34 @@
 #!/bin/zsh
 
-ln -s ~/.dotfiles/themes/powerlevel10k ~/.dotfiles/.oh-my-zsh/custom/themes/powerlevel10k 
+# ln -s ~/.dotfiles/themes/powerlevel10k ~/.dotfiles/.oh-my-zsh/custom/themes/powerlevel10k 
 ln -s -f ~/.dotfiles/.zshrc ~/.zshrc
 ln -s -f ~/.dotfiles/.zlogin ~/.zlogin
 ln -s -f ~/.dotfiles/.vimrc ~/.vimrc
-ln -s -f ~/.dotfiles/.tmux/.tmux.conf ~/.tmux.conf
-ln -s -f ~/.dotfiles/.tmux.conf.local ~/.tmux.conf.local
+ln -s -f ~/.dotfiles/.tmux.conf ~/.tmux.conf
+# ln -s -f ~/.dotfiles/.tmux/.tmux.conf ~/.tmux.conf
+# ln -s -f ~/.dotfiles/.tmux.conf.local ~/.tmux.conf.local
 # ln -s -f ~/.dotfiles/themes/.p10k.zsh ~/.p10k.zsh
 
 cp -n ~/.dotfiles/.zshenv ~/.zshenv
 cp -n ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # Autojump Plugin
-cd ~/.dotfiles/plugins/autojump &&\ 
-./install.py &&\
-cd -
+# cd ~/.dotfiles/plugins/autojump &&\ 
+# ./install.py &&\
+# cd -
 
 # Nvim (linux-64)
-~/.dotfiles/nvim/install.sh &&\
-mkdir -p ~/.config/nvim &&\
-ln -sf ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+#~/.dotfiles/nvim/install.sh &&\
+# mkdir -p ~/.config/nvim &&\
+# ln -sf ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+mkdir -p ~/.config/nvim 
 
 # Nvim plugin (Unix)
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+# sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+#       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # xclip : clipboard-terminal
-~/.dotfiles/xclip.sh
+# ~/.dotfiles/xclip.sh
 
 echo 'Success.\n'
 echo 'Customize the files below.'
