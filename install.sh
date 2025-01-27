@@ -1,13 +1,13 @@
 #!/bin/zsh
 
-# ln -s ~/.dotfiles/themes/powerlevel10k ~/.dotfiles/.oh-my-zsh/custom/themes/powerlevel10k 
+ln -s ~/.dotfiles/themes/powerlevel10k ~/.dotfiles/.oh-my-zsh/custom/themes/powerlevel10k 
 ln -s -f ~/.dotfiles/.zshrc ~/.zshrc
 ln -s -f ~/.dotfiles/.zlogin ~/.zlogin
 ln -s -f ~/.dotfiles/.vimrc ~/.vimrc
 ln -s -f ~/.dotfiles/.tmux.conf ~/.tmux.conf
 # ln -s -f ~/.dotfiles/.tmux/.tmux.conf ~/.tmux.conf
 # ln -s -f ~/.dotfiles/.tmux.conf.local ~/.tmux.conf.local
-# ln -s -f ~/.dotfiles/themes/.p10k.zsh ~/.p10k.zsh
+ln -s -f ~/.dotfiles/themes/.p10k.zsh ~/.p10k.zsh
 
 cp -n ~/.dotfiles/.zshenv ~/.zshenv
 cp -n ~/.dotfiles/.gitconfig ~/.gitconfig
@@ -18,14 +18,9 @@ cp -n ~/.dotfiles/.gitconfig ~/.gitconfig
 # cd -
 
 # Nvim (linux-64)
-#~/.dotfiles/nvim/install.sh &&\
-# mkdir -p ~/.config/nvim &&\
-# ln -sf ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
-mkdir -p ~/.config/nvim 
-
-# Nvim plugin (Unix)
-# sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-#       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+~/.dotfiles/nvim_install.sh &&\
+mkdir -p ~/.config &&\
+ln -s ~/.dotfiles/nvim ~/.config/nvim
 
 # xclip : clipboard-terminal
 # ~/.dotfiles/xclip.sh
