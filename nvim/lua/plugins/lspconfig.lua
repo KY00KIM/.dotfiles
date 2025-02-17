@@ -3,6 +3,8 @@ return {
   ---@class PluginLspOpts
   opts = {
     ---@type lspconfig.options
+    autoformat = true,
+    format_on_save = true,
     servers = {
       -- pyright will be automatically installed with mason and loaded with lspconfig
       pyright = {},
