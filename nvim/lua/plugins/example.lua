@@ -20,6 +20,7 @@ return {
       -- directly inside the plugin declaration.
       vim.g.gruvbox_material_background = 'hard'
       vim.g.gruvbox_material_enable_italic = true
+      vim.g.gruvbox_material_transparent_background = 1
       vim.cmd.colorscheme('gruvbox-material')
     end
   },
@@ -76,7 +77,7 @@ return {
 
   -- for typescript, LazyVim also includes extra specs to properly setup lspconfig,
   -- treesitter, mason and typescript.nvim. So instead of the above, you can use:
-  { import = "lazyvim.plugins.extras.lang.typescript" },
+  -- { import = "lazyvim.plugins.extras.lang.typescript" },
 
   -- the opts function can also be used to change the default opts:
   {
@@ -102,11 +103,11 @@ return {
     end,
   },
 
-  -- use mini.starter instead of alpha
-  { import = "lazyvim.plugins.extras.ui.mini-starter" },
-
-  -- add jsonls and schemastore packages, and setup treesitter for json, json5 and jsonc
-  { import = "lazyvim.plugins.extras.lang.json" },
+  -- -- use mini.starter instead of alpha
+  -- { import = "lazyvim.plugins.extras.ui.mini-starter" },
+  --
+  -- -- add jsonls and schemastore packages, and setup treesitter for json, json5 and jsonc
+  -- { import = "lazyvim.plugins.extras.lang.json" },
 
   -- add any tools you want to have installed below
   {

@@ -1,0 +1,82 @@
+return {
+  "folke/snacks.nvim",
+  lazy = false,
+  opts = {
+    -- dashboard = {
+    --   enabled = true,
+    --   preset = {
+    --     pick = function(cmd, opts)
+    --       return LazyVim.pick(cmd, opts)()
+    --     end,
+    --
+    --     -- ██╗      █████╗ ███████╗██╗   ██╗██╗   ██╗██╗███╗   ███╗          Z
+    --     -- ██║     ██╔══██╗╚══███╔╝╚██╗ ██╔╝██║   ██║██║████╗ ████║      Z
+    --     -- ██║     ███████║  ███╔╝  ╚████╔╝ ██║   ██║██║██╔████╔██║   z
+    --     -- ██║     ██╔══██║ ███╔╝    ╚██╔╝  ╚██╗ ██╔╝██║██║╚██╔╝██║ z
+    --     -- ███████╗██║  ██║███████╗   ██║    ╚████╔╝ ██║██║ ╚═╝ ██║
+    --     -- ╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝     ╚═══╝  ╚═╝╚═╝     ╚═╝
+    --     bigfile = true,
+    --     header = [[ aasd !@#$ASD 1asdasd]],
+    --     -- [[
+    --     --                        ................
+    --     --                     .......................
+    --     --                   ...........''''...........
+    --     --                 ...........''''..................
+    --     --                ...........''......................
+    --     --               ......................................
+    --     --              .............................. ........
+    --     --              .............  .................... ....
+    --     --               ..........   ....... .....'l;,co.. .
+    --     --                 ......    ...........':dO0kxkOd. .  .
+    --     --                  . ...,coollldkkdoodk0KKKK00OOkc
+    --     --                 ;cc:,,:cllox0KKKKKKK0xdolllldkkx.
+    --     --                .lxkoxkkxdoloO00KK00Oxlodxxkxoxkdc
+    --     --                :dxOkclc;;cldxO0KK0Okxlc;;:ocxOkdo.
+    --     --             l: loxk'Ooc' .odok0KXKkxox;c  :X:lkdo..o
+    --     --             dl.loxO0Nc   .oWkkKXXKOxXk.  .:XXkkdo'cd.
+    --     --             dkcloxO0XXkdx0XX00KXXXK0KX0xxOXXKOkdllxO
+    --     --             dOdloxk0KXNNNXXXK00KK0OKXXXNNNXX0OxolokO
+    --     --          'ox000OO000KKKXXXXKK0KXXK0KKXXXXXKKK00OO0K0dd;
+    --     --          cOOOOOOOOOOOOOOOOOOO0000000000000000000000000k
+    --     --          ;OOOOOOOOOOOOOOOOOOOOOOOOOOOO0000000000000000o
+    --     --          .kkkkkkkkOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO000000:
+    --     --          .kkkkkkkkkkkkkkkkkOOOOOOOOOOOOOOOOOOOOOOOOOOO,
+    --     --          .xkkkkkkkkkkkkkkkkkkkkkOOkkkOOOOOOOOOOOOOOOOO.
+    --     --           xxxxxxxxxxxkkkkkkkkkO0KKOkkkkkkkkkkkOOOOOOOk.
+    --     --           dxxxxxxxxxxxxxxxxxxO00KKOkkkkkkkkkkkkkkkkkkk
+    --     --           ddxxxxxxxxxxxxxxxxxxkOOOkxxxxxkkkkkkkkkkkkkx
+    --     --          .oddddddddddddxxxxxxxxxxxxxxxxxxxxxxxxxxxkkkx.
+    --     --         ..oddddddddddddddddddddxxxxxxxxxxxxxxxxxxxxxxd.
+    --     --        ...oddddddddddddddddddddddddddddddxxxxxxxxxxxxd..
+    --     --        ...lodddddddddddddddddddddddddddddddddddddddxdo...
+    --     -- ]],
+    --   },
+    --   -- stylua: ignore
+    --   ---@type snacks.dashboard.Item[]
+    --   keys = {
+    --     { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
+    --     { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
+    --     { icon = " ", key = "g", desc = "Find Text", action = ":lua Snacks.dashboard.pick('live_grep')" },
+    --     { icon = " ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
+    --     { icon = " ", key = "c", desc = "Config", action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})" },
+    --     { icon = " ", key = "s", desc = "Restore Session", section = "session" },
+    --     { icon = " ", key = "x", desc = "Lazy Extras", action = ":LazyExtras" },
+    --     { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy" },
+    --     { icon = " ", key = "q", desc = "Quit", action = ":qa" },
+    --   },
+    --   sections = {
+    --     { section = "header" },
+    --     { section = "keys", gap = 1, padding = 1 },
+    --     { section = "startup" },
+    --     {
+    --       section = "terminal",
+    --       cmd = "jp2a ~/.config/nvim/memoticon.png --width=60",
+    --       height = 30,
+    --       pane = 2,
+    --       random = 10,
+    --       indent = 4,
+    --     },
+    --   },
+    -- },
+  },
+}

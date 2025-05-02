@@ -9,16 +9,21 @@ return {
       -- pyright will be automatically installed with mason and loaded with lspconfig
       pyright = {},
       -- tsserver will be automatically installed with mason and loaded with lspconfig
-      tsserver = {},
+      -- tsserver = {},
       clangd = {
         cmd = {
           "clangd",
           "--background-index",
           "--clang-tidy",
-          "--header-insertion=iwyu",
+          -- "--header-insertion=iwyu",
+          "--header-insertion=never",
           "--completion-style=detailed",
           "--function-arg-placeholders",
           "--fallback-style=llvm",
+          "--compile-commands-dir=./",
+          -- "--query-driver=/usr/bin/g++",
+          -- icx/icpx
+          "--query-driver=/opt/intel/oneapi/compiler/*/bin/icx, /opt/intel/oneapi/compiler/*/bin/icpx,/usr/bin/g++,/usr/bin/clang++,*gcc,*clang",
         },
       },
       dockerls = {},
