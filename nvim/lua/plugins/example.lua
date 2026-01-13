@@ -9,6 +9,12 @@
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "gruvbox-material",
+    },
+  },
   -- add gruvbox
   -- { "ellisonleao/gruvbox.nvim" },
   {
@@ -18,20 +24,15 @@ return {
     config = function()
       -- Optionally configure and load the colorscheme
       -- directly inside the plugin declaration.
-      vim.g.gruvbox_material_background = 'hard'
+      vim.g.gruvbox_material_background = 'soft'
       vim.g.gruvbox_material_enable_italic = true
-      vim.g.gruvbox_material_transparent_background = 1
-      vim.cmd.colorscheme('gruvbox-material')
+      vim.g.gruvbox_material_enable_bold = true
+      vim.g.gruvbox_material_transparent_background = 0
+      vim.g.gruvbox_material_ui_contrast = 'high'
+      vim.g.gruvbox_material_disable_terminal_colors = true
     end
   },
   -- Configure LazyVim to load gruvbox
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox-material",
-    },
-  },
-
   -- change trouble config
   {
     "folke/trouble.nvim",
@@ -111,7 +112,7 @@ return {
 
   -- add any tools you want to have installed below
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
         "hadolint",
